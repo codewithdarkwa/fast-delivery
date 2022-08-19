@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { View, Text, SafeAreaView, ScrollView } from "react-native";
 import { useSelector } from "react-redux";
 import LottieView from "lottie-react-native";
-import firebase from "../firebase";
 import MenuItems from "../components/RestaurantDetail/MenuItem";
 // import { collection, getDocs } from 'firebase/firestore'
+import firebase from '../firebase'
 // import {db} from '../firebase'
 
 export default function OrderCompleted() {
@@ -50,9 +50,8 @@ export default function OrderCompleted() {
 
   // useEffect(()=>{
   //   const FoodCollection = collection(db, 'orders')
-  //   getDocs(FoodCollection).then(response =>{
-  //     const orderedFood = response.docs.map((doc)=>setLastOrder(doc.data()))
-  //   }).catch((err)=>console.log(err.message))
+  //   getDocs(FoodCollection).then(response => response.docs.map((doc)=>setLastOrder(doc.data()))
+  // ).catch((err)=>console.log(err.message))
   // },[])
 
   return (

@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { View, Text, TouchableOpacity, Modal, StyleSheet } from "react-native";
 import { useSelector } from "react-redux";
 import OrderItem from "./OrderItem";
-import firebase from "../../firebase";
+import firebase from '../../firebase';
 import LottieView from "lottie-react-native";
+// import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
+// import {db} from '../firebase'
 
 export default function ViewCart({ navigation }) {
   const [modalVisible, setModalVisible] = useState(false);
@@ -39,7 +41,24 @@ export default function ViewCart({ navigation }) {
       });
   };
 
-  
+  // const addOrderToFireBase = async() => {
+  //   setLoading(true);
+  //   try {
+  //      await addDoc(collection(db, "orders"), {
+  //       items: items,
+  //       restaurantName: restaurantName,
+  //       createdAt:serverTimestamp(),
+  //     });
+  //     setTimeout(() => {
+  //       setLoading(false);
+  //       navigation.navigate("OrderCompleted");
+  //     },2500);
+  //   } catch (e) {
+  //     console.error(e.message);
+  //   }
+
+  // }
+
   const checkoutModalContent = () => {
     return (
       <>
