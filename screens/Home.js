@@ -8,12 +8,12 @@ import SearchBar from '../components/home/SearchBar'
 import { localRestaurants } from '../components/home/RestaurantItems'
 import { Divider } from 'react-native-elements'
 import BottomTabs from '../components/home/BottomTabs'
-
+import {localFoods} from '../localFoods'
 const YELP_API_KEY = "T3KmNiUNLVKG9vQeiy16yr3-yShgQV728urB4CZsu2ttVLvv9gEZXlFpy2gxQ1EJ5-nBj60m6tbbN_Wau1AKghfHgHP_tDMfWYTPZPNhbtlA1KP_QvzhckkVqKjOYnYx";
 
 export default function Home({navigation}){
-    const [restaurantData, setRestaurantData] = useState(localRestaurants)
-    const [city, setCity] = useState('Atlanta')
+    const [restaurantData, setRestaurantData] = useState(localFoods)
+    const [city, setCity] = useState('atlanta')
     const [activeTab, setActivetab] = useState('Delivery');
 
    const getRestaurantsFromYelp = () => {
@@ -23,7 +23,7 @@ export default function Home({navigation}){
               Authorization: `Bearer ${YELP_API_KEY}`,
             },
           };
-             return  fetch(yelpUrl, apiOptions)
+             return city === 'Ghana'? setRestaurantData(localFoods) : fetch(yelpUrl, apiOptions)
              .then((res)=>res.json())
              .then((json)=>setRestaurantData(json.businesses
              .filter((business)=> business.transactions
