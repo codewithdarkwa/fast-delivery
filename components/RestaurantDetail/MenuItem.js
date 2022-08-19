@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
   titleStyle: {
     fontSize: 19,
     fontWeight: "600",
+    color:"#000"
   },
 });
 
@@ -75,8 +76,8 @@ export default function MenuItems({
 const FoodInfo = (props) => (
   <View style={{ width: 240, justifyContent: "space-evenly" }}>
     <Text style={styles.titleStyle}>{props.food.title}</Text>
-    <Text>{props.food.description}</Text>
-    <Text>{props.food.price}</Text>
+    <Text style={{color:"#000"}}>{props.food.description}</Text>
+    <Text style={{color:"#000"}}>{props.food.price}</Text>
   </View>
 );
 

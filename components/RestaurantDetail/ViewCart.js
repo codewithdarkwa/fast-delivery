@@ -70,7 +70,7 @@ export default function ViewCart({ navigation }) {
             ))}
             <View style={styles.subtotalContainer}>
               <Text style={styles.subtotalText}>Subtotal</Text>
-              <Text>{totalUSD}</Text>
+              <Text style={{color:"#000"}}>{totalUSD}</Text>
             </View>
             <View style={{ flexDirection: "row", justifyContent: "center" }}>
               <TouchableOpacity
@@ -205,12 +205,14 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     fontSize: 18,
     marginBottom: 10,
+    color:"#000",
   },
 
   subtotalContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 15,
+   
   },
 
   subtotalText: {
@@ -218,5 +220,6 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     fontSize: 15,
     marginBottom: 10,
+    color:"#000",
   },
 });

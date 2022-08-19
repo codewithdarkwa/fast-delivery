@@ -29,6 +29,7 @@ const RestaurantName = (props) => (
       fontSize: 29,
       fontWeight: "600",
       marginTop: 10,
+      color:"#000",
       marginHorizontal: 15,
     }}
   >
@@ -43,6 +44,7 @@ const RestaurantDescription = (props) => (
       marginHorizontal: 15,
       fontWeight: "400",
       fontSize: 15.5,
+      color:"#000",
     }}
   >
     {props.description}

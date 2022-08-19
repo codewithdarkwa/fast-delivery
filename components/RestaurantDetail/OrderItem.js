@@ -13,8 +13,8 @@ export default function OrderItem({ item }) {
         borderBottomColor: "#999",
       }}
     >
-      <Text style={{ fontWeight: "600", fontSize: 16 }}>{title}</Text>
-      <Text style={{ opacity: 0.5, fontSize: 16 }}>{price}</Text>
+      <Text style={{ fontWeight: "600", fontSize: 16,color:"#000" }}>{title}</Text>
+      <Text style={{ opacity: 0.5, fontSize: 16,color:"#000" }}>{price}</Text>
     </View>
   );
 }

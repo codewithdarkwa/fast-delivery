@@ -23,14 +23,16 @@ export default function SearchBar({cityHandler}){
                     borderRadius:20,
                     fontWeight:'bold',
                     marginTop:7,
+                    color:"#000"
                 },
                 textInputContainer:{
                     backgroundColor:'#eee',
                     borderRadius:50,
                     flexDirection:"row",
                     alignItems:"center",
-                    marginRight:18
-                }
+                    marginRight:18,
+                },
+                description:{color:"#000"},
             }} 
            renderLeftButton={()=>(
            <View style={{marginLeft:10}}>
