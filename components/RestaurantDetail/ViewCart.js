@@ -173,7 +173,7 @@ export default function ViewCart({ navigation }) {
           }}
         >
           <LottieView
-            style={{ height: 200,alignItems: "center"}}
+            style={{ height: 200,alignSelf: "center" }}
             source={require("../../assets/animations/scanner.json")}
             autoPlay
             speed={3}
