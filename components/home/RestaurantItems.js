@@ -83,6 +83,7 @@ const RestaurantInfo = (props) => (
       justifyContent: "space-between",
       alignItems: "center",
       marginTop: 10,
+      color:"#000",
     }}
   >
     <View>
