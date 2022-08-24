@@ -1,6 +1,6 @@
 import React from 'react';
 import {View,Text,TouchableOpacity} from 'react-native'
-import  Icon  from 'react-native-vector-icons/FontAwesome5'
+import  FontAwesome5  from 'react-native-vector-icons/FontAwesome5'
 
 export default function BottomTabs(){
  
@@ -42,7 +42,7 @@ const icons =[
 const BottomIcon = ({icon,text,color})=>(
     <TouchableOpacity>
     <View>
-        <Icon color={color} name={icon} size={25} style={{marginBottom: 3,alignSelf: 'center'}}/>
+        <FontAwesome5 color={color} name={icon} size={25} style={{marginBottom: 3,alignSelf: 'center'}}/>
     <Text style={{color:"#000"}}>{text}</Text>
     </View>
     </TouchableOpacity>
