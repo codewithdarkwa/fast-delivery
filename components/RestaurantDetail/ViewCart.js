@@ -7,7 +7,6 @@ import LottieView from "lottie-react-native";
 // import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 // import {db} from '../firebase'
 
-
 export default function ViewCart({ navigation }) {
   const [modalVisible, setModalVisible] = useState(false);
   const [loading, setLoading] = useState(false);
