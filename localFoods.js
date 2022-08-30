@@ -77,4 +77,34 @@ export const localFoods = [
       rating: 4.5,
       activeTab: "Pickup"
     },
+    {
+      name: "Ampesi",
+      image_url:
+      "https://wordpress.ghanatalksradio.com/wp-content/uploads/2022/03/IMG_20181010_210531_331.jpg",
+      categories: ["Cafe", "Bar"],
+      price: "$$",
+      reviews: 1244,
+      rating: 4.5,
+      activeTab: "Pickup"
+    },
+    {
+      name: "Ampesi",
+      image_url:
+      "https://agameals.com/wp-content/uploads/2022/02/6064e78d05eb348a7c6e18ad6a63abb8-260x195.jpg",
+      categories: ["Cafe", "Bar"],
+      price: "$$",
+      reviews: 1244,
+      rating: 4.5,
+      activeTab: "Delivery"
+    },
+    {
+      name: "Fufu",
+      image_url:
+      "https://i.pinimg.com/originals/d1/91/88/d19188f6dcc876c7181db2797e951b70.jpg",
+      categories: ["Cafe", "Bar"],
+      price: "$$",
+      reviews: 1244,
+      rating: 4.5,
+      activeTab: "Delivery"
+    },
 ];

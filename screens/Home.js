@@ -25,7 +25,7 @@ export default function Home({navigation}){
               Authorization: `Bearer ${YELP_API_KEY}`,
             },
           };
-             return city === 'Ghana' ? setRestaurantData(localFoods.filter((food)=>food.activeTab == activeTab))
+             return city === 'Ghana' ? setRestaurantData(localFoods.filter((food)=>food.activeTab === activeTab))
              : fetch(yelpUrl, apiOptions)
              .then((res)=>res.json())
              .then((json)=>setRestaurantData(json.businesses
