@@ -25,11 +25,12 @@ export default function Home({navigation}){
               Authorization: `Bearer ${YELP_API_KEY}`,
             },
           };
-             return city === 'Ghana'? setRestaurantData(localFoods) : fetch(yelpUrl, apiOptions)
+             return city === 'Ghana' ? setRestaurantData(localFoods.filter((food)=>food.activeTab == activeTab))
+             : fetch(yelpUrl, apiOptions)
              .then((res)=>res.json())
              .then((json)=>setRestaurantData(json.businesses
              .filter((business)=> business.transactions
-             .includes(activeTab.toLowerCase()))));
+             .includes(activeTab.toLowerCase()))))
     }
 
     useEffect(()=>{

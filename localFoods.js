@@ -7,6 +7,7 @@ export const localFoods = [
       price: "$$",
       reviews: 1244,
       rating: 4.5,
+      activeTab: "Delivery"
     },
     {
       name: "Fufu",
@@ -16,6 +17,7 @@ export const localFoods = [
       price: "$$",
       reviews: 1244,
       rating: 4.5,
+      activeTab: "pickup"
     },
     {
       name: "Jollof",
@@ -24,6 +26,7 @@ export const localFoods = [
       price: "$$",
       reviews: 1244,
       rating: 3.7,
+      activeTab: "Delivery"
     },
     {
       name: "Waakye",
@@ -32,6 +35,7 @@ export const localFoods = [
       price: "$$",
       reviews: 1244,
       rating: 4.7,
+      activeTab: "Pickup"
     },
     {
       name: "Banku",
@@ -41,6 +45,7 @@ export const localFoods = [
       price: "$$",
       reviews: 700,
       rating: 4.9,
+      activeTab: "Delivery"
     },
     {
       name: "Fried rice",
@@ -50,6 +55,7 @@ export const localFoods = [
       price: "$$",
       reviews: 700,
       rating: 4.9,
+      activeTab: "Pickup"
     },
     {
       name: "Rice ball with Groundnut soup",
@@ -59,6 +65,7 @@ export const localFoods = [
       price: "$$",
       reviews: 1244,
       rating: 4.0,
+      activeTab: "Delivery"
     },
     {
       name: "Kenkey",
@@ -68,5 +75,6 @@ export const localFoods = [
       price: "$$",
       reviews: 1244,
       rating: 4.5,
+      activeTab: "Pickup"
     },
 ];
