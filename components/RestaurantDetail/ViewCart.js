@@ -12,7 +12,7 @@ export default function ViewCart({ navigation }) {
   const [loading, setLoading] = useState(false);
 
   const { items, restaurantName } = useSelector(
-    (state) => state.cartReducer.selectedItems
+    state=> state.cartReducer.selectedItems
   );
 
   const total = items
