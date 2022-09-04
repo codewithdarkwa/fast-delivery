@@ -32,7 +32,7 @@ const RestaurantName = (props) => (
       color:"#000",
       marginHorizontal: 15,
     }}
-  >
+>
     {props.name}
   </Text>
 );

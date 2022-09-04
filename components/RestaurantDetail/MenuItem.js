@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function MenuItems({
+export default function sMenuItems({
   restaurantName,
   foods,
   hideCheckbox,
