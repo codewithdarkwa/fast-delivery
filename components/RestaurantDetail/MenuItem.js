@@ -5,6 +5,7 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 
+
 const styles = StyleSheet.create({
   menuItemStyle: {
     flexDirection: "row",
@@ -19,9 +20,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function sMenuItems({
+export default function MenuItems({
   restaurantName,
   foods,
+  localFoods,
   hideCheckbox,
   marginLeft,
 }) {
@@ -46,7 +48,31 @@ export default function sMenuItems({
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
-      {foods.map((food, index) => (
+      {restaurantName === ('Gari and Beans') 
+      ? localFoods.map((food,index)=>(
+        <View key={index}>
+        <View style={styles.menuItemStyle}>
+          {hideCheckbox ? (
+            <></>
+          ) : (
+            <BouncyCheckbox
+              iconStyle={{ borderColor: "lightgray", borderRadius: 0 }}
+              fillColor="green"
+              isChecked={isFoodInCart(food, cartItems)}
+              onPress={(checkboxValue) => selectItem(food, checkboxValue)}
+            />
+          )}
+          <LocalFoodInfo food={food} />
+          <LocalFoodImage food={food} marginLeft={marginLeft ? marginLeft : 0} />
+        </View>
+        <Divider
+          width={0.5}
+          orientation="vertical"
+          style={{ marginHorizontal: 20 }}
+        />
+      </View>
+      )) :
+      foods.map((food, index) => (
         <View key={index}>
           <View style={styles.menuItemStyle}>
             {hideCheckbox ? (
@@ -68,8 +94,9 @@ export default function sMenuItems({
             style={{ marginHorizontal: 20 }}
           />
         </View>
-      ))}
-    </ScrollView>
+        ))
+      }
+      </ScrollView>
   );
 }
 
@@ -78,6 +105,27 @@ const FoodInfo = (props) => (
     <Text style={styles.titleStyle}>{props.food.title}</Text>
     <Text style={{color:"#000"}}>{props.food.description}</Text>
     <Text style={{color:"#000"}}>{props.food.price}</Text>
+  </View>
+);
+
+const LocalFoodInfo = ({food}) => (
+  <View style={{ width: 240, justifyContent: "space-evenly" }}>
+    <Text style={styles.titleStyle}>{food.name}</Text>
+    <Text style={{color:"#000"}}>With butter lettuce, tomato and sauce bechamel</Text>
+    <Text style={{color:"#000"}}>Ghs {food.price}</Text>
+  </View>
+);
+const LocalFoodImage = ({ marginLeft, food }) => (
+  <View>
+    <Image
+      source={{uri:food.image_url}}
+      style={{
+        width: 100,
+        height: 100,
+        borderRadius: 8,
+        marginLeft: marginLeft,
+      }}
+    />
   </View>
 );
 
