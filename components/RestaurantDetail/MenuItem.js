@@ -34,7 +34,7 @@ export default function MenuItems({
       type: "ADD_TO_CART",
       payload: {
         ...item,
-        restaurantName: restaurantName,
+        restaurantName:restaurantName,
         checkboxValue: checkboxValue,
       },
     });
@@ -42,15 +42,14 @@ export default function MenuItems({
   const cartItems = useSelector(
     (state) => state.cartReducer.selectedItems.items
   );
+  const isFoodInCart = (food, cartItems) => Boolean(cartItems.find((item) => item.title === food.title));
 
-  const isFoodInCart = (food, cartItems) =>
-    Boolean(cartItems.find((item) => item.title === food.title));
 
 let localfoods = ['Gari and Beans','Fufu','Jollof','Waakye','Banku','Ampesi', 'Fried Rice','Rice ball with Groundnut soup','Kenkey','Fried plantain'];
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       {localfoods.includes(restaurantName)
-        ? localFoods.map((food,index)=>(
+        ? (localFoods.map((food,index)=>(
         <View key={index}>
         <View style={styles.menuItemStyle}>
           {hideCheckbox ? (
@@ -72,8 +71,9 @@ let localfoods = ['Gari and Beans','Fufu','Jollof','Waakye','Banku','Ampesi', 'F
           style={{ marginHorizontal: 20 }}
         />
       </View>
-      )) :
-      foods.map((food, index) => (
+      )) )
+      :
+      (foods.map((food, index) => (
         <View key={index}>
           <View style={styles.menuItemStyle}>
             {hideCheckbox ? (
@@ -95,7 +95,7 @@ let localfoods = ['Gari and Beans','Fufu','Jollof','Waakye','Banku','Ampesi', 'F
             style={{ marginHorizontal: 20 }}
           />
         </View>
-        ))
+        )))
       }
       </ScrollView>
   );
@@ -107,11 +107,23 @@ const FoodInfo = (props) => (
     <Text style={{color:"#000"}}>{props.food.price}</Text>
   </View>
 );
-
+const FoodImage = ({ marginLeft, ...props }) => (
+  <View>
+    <Image
+      source={{ uri: props.food.image }}
+      style={{
+        width: 100,
+        height: 100,
+        borderRadius: 8,
+        marginLeft: marginLeft,
+      }}
+    />
+  </View>
+);
 
 const LocalFoodInfo = ({food}) => (
   <View style={{ width: 240, justifyContent: "space-evenly" }}>
-    <Text style={styles.titleStyle}>{food.name}</Text>
+    <Text style={styles.titleStyle}>{food.title}</Text>
     <Text style={{color:"#000"}}>{food.description}</Text>
     <Text style={{color:"#000"}}>Ghs {food.price}</Text>
   </View>
@@ -130,16 +142,3 @@ const LocalFoodImage = ({ marginLeft, food }) => (
   </View>
 );
 
-const FoodImage = ({ marginLeft, ...props }) => (
-  <View>
-    <Image
-      source={{ uri: props.food.image }}
-      style={{
-        width: 100,
-        height: 100,
-        borderRadius: 8,
-        marginLeft: marginLeft,
-      }}
-    />
-  </View>
-);
