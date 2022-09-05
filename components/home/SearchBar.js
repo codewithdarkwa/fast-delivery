@@ -23,7 +23,8 @@ export default function SearchBar({cityHandler}){
                     borderRadius:20,
                     fontWeight:'bold',
                     marginTop:7,
-                    color:"#000"
+                    color:"#000",
+                    
                 },
                 textInputContainer:{
                     backgroundColor:'#eee',
@@ -53,6 +54,7 @@ export default function SearchBar({cityHandler}){
             </View>
         )}
         enablePoweredByContainer={false}
+        
             />
         </View>
     )
