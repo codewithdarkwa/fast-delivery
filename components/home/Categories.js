@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text,Image,ScrollView} from 'react-native'
+import {View, Text,Image,ScrollView,TouchableOpacity} from 'react-native'
 
 const items = [
     {
@@ -44,6 +44,7 @@ export default function Categories(){
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             {items.map((item,index) => (
             <View key={index} style={{alignItems: "center",marginRight:30}}>
+              <TouchableOpacity>
             <Image source={item.image} 
             style={{
              width:50,
@@ -55,6 +56,7 @@ export default function Categories(){
                 fontWeight:'bold',
                 color:"#000"
             }}>{item.text}</Text>
+              </TouchableOpacity>
             </View>
             ))}
         </ScrollView>
