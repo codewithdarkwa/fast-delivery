@@ -5,6 +5,7 @@ export const localFoods = [
       "https://kuulpeeps.com/wp-content/uploads/2020/07/0777DA02-E5D5-4917-A1AF-D1EDA6AE5301-1024x1024.jpeg",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"Gari and Beans with fried plantain and egg",
       reviews: 1244,
       rating: 4.5,
       activeTab: "Delivery"
@@ -15,6 +16,7 @@ export const localFoods = [
       "https://miro.medium.com/max/638/1*XDjyQ6dBVMdybEySuQlHGw.jpeg",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"Fufu with light soup and goat meat",
       reviews: 1244,
       rating: 4.5,
       activeTab: "pickup"
@@ -24,6 +26,7 @@ export const localFoods = [
       image_url: "https://media-cdn.tripadvisor.com/media/photo-s/19/2d/e4/a7/this-is-ghana-jollof.jpg",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"Jollof with lettuce and salad ",
       reviews: 1244,
       rating: 3.7,
       activeTab: "Delivery"
@@ -33,6 +36,7 @@ export const localFoods = [
       image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOh4WahNUlIQxYKTZe3sMigSXHZPhH-awNJw&usqp=CAU",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"Waakye with salad and meat",
       reviews: 1244,
       rating: 4.7,
       activeTab: "Pickup"
@@ -43,6 +47,7 @@ export const localFoods = [
       
       categories: ["Indian", "Bar"],
       price: "$13.50",
+      description:"Banku with peper fried fish ",
       reviews: 700,
       rating: 4.9,
       activeTab: "Delivery"
@@ -53,6 +58,7 @@ export const localFoods = [
       "https://images.bolt.eu/store/2021/2021-12-02/7c27d841-ff96-4a2a-8a43-1a63e2b112b4.jpeg",
       categories: ["Indian", "Bar"],
       price: "$13.50",
+      description:"Fried rice with chicken",
       reviews: 700,
       rating: 4.9,
       activeTab: "Pickup"
@@ -63,6 +69,7 @@ export const localFoods = [
       "https://i.ytimg.com/vi/xAtWPgIINTY/maxresdefault.jpg",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"Rice ball with Groundnut soup and goat meat",
       reviews: 1244,
       rating: 4.0,
       activeTab: "Delivery"
@@ -73,6 +80,7 @@ export const localFoods = [
       "https://cdn.shopify.com/s/files/1/1153/4418/articles/kenkey_with_fish_1600x.PNG?v=1527109158",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"Kenkey with fried fish and hot peper",
       reviews: 1244,
       rating: 4.5,
       activeTab: "Pickup"
@@ -83,6 +91,7 @@ export const localFoods = [
       "https://wordpress.ghanatalksradio.com/wp-content/uploads/2022/03/IMG_20181010_210531_331.jpg",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"Ampesi with kontomire stew",
       reviews: 1244,
       rating: 4.5,
       activeTab: "Pickup"
@@ -93,6 +102,7 @@ export const localFoods = [
       "https://agameals.com/wp-content/uploads/2022/02/6064e78d05eb348a7c6e18ad6a63abb8-260x195.jpg",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"Ampesi with kontomire stew",
       reviews: 1244,
       rating: 4.5,
       activeTab: "Delivery"
@@ -103,6 +113,7 @@ export const localFoods = [
       "https://i.pinimg.com/originals/d1/91/88/d19188f6dcc876c7181db2797e951b70.jpg",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"Fufu with light soup and goat meat",
       reviews: 1244,
       rating: 4.5,
       activeTab: "Delivery"
@@ -113,6 +124,7 @@ export const localFoods = [
       "https://eatyourworld.com/blog/wp-content/uploads/2021/06/kelewele-ghana-foods.jpg",
       categories: ["Cafe", "Bar"],
       price: "$13.50",
+      description:"fried plantain",
       reviews: 1244,
       rating: 4.5,
       activeTab: "Pickup"
