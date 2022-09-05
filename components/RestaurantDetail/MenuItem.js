@@ -111,7 +111,7 @@ const FoodInfo = (props) => (
 const LocalFoodInfo = ({food}) => (
   <View style={{ width: 240, justifyContent: "space-evenly" }}>
     <Text style={styles.titleStyle}>{food.name}</Text>
-    <Text style={{color:"#000"}}>With butter lettuce, tomato and sauce bechamel</Text>
+    <Text style={{color:"#000"}}>{food.decription}</Text>
     <Text style={{color:"#000"}}>Ghs {food.price}</Text>
   </View>
 );
