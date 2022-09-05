@@ -16,7 +16,7 @@ export const localFoods = [
       image_url:
       "https://miro.medium.com/max/638/1*XDjyQ6dBVMdybEySuQlHGw.jpeg",
       categories: ["Cafe", "Bar"],
-      price: "15.0",
+      price: "15.00",
       description:"Fufu with light soup and goat meat",
       reviews: 1244,
       rating: 4.5,
