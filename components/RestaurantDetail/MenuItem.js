@@ -46,10 +46,11 @@ export default function MenuItems({
   const isFoodInCart = (food, cartItems) =>
     Boolean(cartItems.find((item) => item.title === food.title));
 
+let localfoods = ['Gari and Beans','Fufu','Jollof','Waakye','Banku','Ampesi', 'Fried Rice','Rice ball with Groundnut soup','Kenkey','Fried plantain'];
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
-      {restaurantName === ('Gari and Beans') 
-      ? localFoods.map((food,index)=>(
+      {localfoods.includes(restaurantName)
+        ? localFoods.map((food,index)=>(
         <View key={index}>
         <View style={styles.menuItemStyle}>
           {hideCheckbox ? (
@@ -99,7 +100,6 @@ export default function MenuItems({
       </ScrollView>
   );
 }
-
 const FoodInfo = (props) => (
   <View style={{ width: 240, justifyContent: "space-evenly" }}>
     <Text style={styles.titleStyle}>{props.food.title}</Text>
@@ -108,10 +108,11 @@ const FoodInfo = (props) => (
   </View>
 );
 
+
 const LocalFoodInfo = ({food}) => (
   <View style={{ width: 240, justifyContent: "space-evenly" }}>
     <Text style={styles.titleStyle}>{food.name}</Text>
-    <Text style={{color:"#000"}}>{food.decription}</Text>
+    <Text style={{color:"#000"}}>{food.description}</Text>
     <Text style={{color:"#000"}}>Ghs {food.price}</Text>
   </View>
 );
