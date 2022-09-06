@@ -4,8 +4,8 @@ import { useSelector } from "react-redux";
 import LottieView from "lottie-react-native";
 import MenuItems from "../components/RestaurantDetail/MenuItem";
 // import { collection, getDocs } from 'firebase/firestore'
-import firebase from '../firebase'
 // import {db} from '../firebase'
+import firebase from '../firebase'
 
 export default function OrderCompleted() {
   const [lastOrder, setLastOrder] = useState({
