@@ -30,7 +30,7 @@ const items = [
       image: require("../../assets/images/desserts.png"),
       text: "Desserts",
     },
-  ];
+];
 
 export default function Categories(){
     return(
