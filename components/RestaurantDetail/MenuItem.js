@@ -45,7 +45,7 @@ export default function MenuItems({
   const isFoodInCart = (food, cartItems) => Boolean(cartItems.find((item) => item.title === food.title));
 
 
-let localfoods = ['Gari and Beans','Fufu','Jollof','Waakye','Banku','Ampesi', 'Fried Rice','Rice ball with Groundnut soup','Kenkey','Fried plantain'];
+let localfoods = ['Gari and Beans','Fufu','Jollof','Waakye','Banku','Ampesi', 'Fried rice','Rice ball with Groundnut soup','Kenkey','Fried plantain',];
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       {localfoods.includes(restaurantName)

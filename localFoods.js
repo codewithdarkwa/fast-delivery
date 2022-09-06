@@ -130,14 +130,14 @@ export const localFoods = [
       activeTab: "Delivery"
     },
     {
-      name: "Fried plantain ",
+      name: "Fried plantain",
       image_url:
       "https://eatyourworld.com/blog/wp-content/uploads/2021/06/kelewele-ghana-foods.jpg",
       categories: ["Cafe", "Bar"],
       price: "10.00",
       description:"fried plantain",
       reviews: 1244,
-      title: "Fried plantain ",
+      title: "Fried plantain",
       rating: 4.5,
       activeTab: "Pickup"
     },
