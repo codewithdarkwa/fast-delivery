@@ -8,6 +8,7 @@ export const localFoods = [
       reviews: 1244,
       title: "Gari and Beans",
       rating: 4.5,
+      categories: ["Cafe", "Bar"],
       activeTab: "Delivery"
     },
     {
@@ -19,6 +20,7 @@ export const localFoods = [
       reviews: 1244,
       rating: 4.5,
       title: "Fufu",
+      categories: ["Cafe", "Bar"],
       activeTab: "pickup"
     },
     {
@@ -28,6 +30,7 @@ export const localFoods = [
       description:"Jollof with lettuce and salad ",
       reviews: 1244,
       title: "Jollof",
+      categories: ["Cafe", "Bar"],
       rating: 3.7,
       activeTab: "Delivery"
     },
@@ -38,6 +41,7 @@ export const localFoods = [
       description:"Waakye with salad and meat",
       reviews: 1244,
       name: "Waakye",
+      categories: ["Cafe", "Bar"],
       rating: 4.7,
       activeTab: "Pickup"
     },
@@ -50,6 +54,7 @@ export const localFoods = [
       description:"Banku with peper fried fish ",
       reviews: 700,
       title: "Banku",
+      categories: ["Cafe", "Bar"],
       rating: 4.9,
       activeTab: "Delivery"
     },
@@ -62,6 +67,7 @@ export const localFoods = [
       description:"Fried rice with chicken",
       reviews: 700,
       title: "Fried rice",
+      categories: ["Cafe", "Bar"],
       rating: 4.9,
       activeTab: "Pickup"
     },
@@ -74,6 +80,7 @@ export const localFoods = [
       reviews: 1244,
       title: "Rice ball with Groundnut soup",
       rating: 4.0,
+      categories: ["Cafe", "Bar"],
       activeTab: "Delivery"
     },
     {
@@ -85,6 +92,7 @@ export const localFoods = [
       description:"Kenkey with fried fish and hot peper",
       reviews: 1244,
       rating: 4.5,
+      categories: ["Cafe", "Bar"],
       activeTab: "Pickup"
     },
     {
@@ -95,6 +103,7 @@ export const localFoods = [
       description:"Ampesi with kontomire stew",
       reviews: 1244,
       title: "Ampesi",
+      categories: ["Cafe", "Bar"],
       rating: 4.5,
       activeTab: "Pickup"
     },
@@ -106,6 +115,7 @@ export const localFoods = [
       description:"Ampesi with kontomire stew",
       reviews: 1244,
       title: "Ampesi",
+      categories: ["Cafe", "Bar"],
       rating: 4.5,
       activeTab: "Delivery"
     },
@@ -118,6 +128,7 @@ export const localFoods = [
       reviews: 1244,
       title: "Fufu",
       rating: 4.5,
+      categories: ["Cafe", "Bar"],
       activeTab: "Delivery"
     },
     {
@@ -129,6 +140,7 @@ export const localFoods = [
       reviews: 1244,
       title: "Fried plantain",
       rating: 4.5,
+      categories: ["Cafe", "Bar"],
       activeTab: "Pickup"
     },
 ];
