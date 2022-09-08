@@ -3,8 +3,6 @@ import { View, Text, SafeAreaView, ScrollView } from "react-native";
 import { useSelector } from "react-redux";
 import LottieView from "lottie-react-native";
 import MenuItems from "../components/RestaurantDetail/MenuItem";
-// import { collection, getDocs } from 'firebase/firestore'
-// import {db} from '../firebase'
 import firebase from '../firebase'
 
 export default function OrderCompleted() {
@@ -47,13 +45,6 @@ export default function OrderCompleted() {
 
     return () => unsubscribe();
   }, []);
-
-  // useEffect(()=>{
-  //   const FoodCollection = collection(db, 'orders')
-  //   getDocs(FoodCollection).then(response => response.docs.map((doc)=>setLastOrder(doc.data()))
-  // ).catch((err)=>console.log(err.message))
-  // },[])
-
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>  
       <View
