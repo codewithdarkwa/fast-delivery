@@ -54,19 +54,21 @@ Run npm start to start up the app
 ```
 npm start
 ```
+<p align="center">
+ <img width=250px height=450 src="assets/1.png" alt="Project logo">
+  <img width=250px height=450 src="assets/2.png" alt="Project logo">
+  <img width=250px height=450 src="assets/3.png" alt="Project logo">
+  <img width=250px height=450 src="assets/4.png" alt="Project logo">
+  <img width=250px height=450 src="assets/5.png" alt="Project logo">
+  <img width=250px height=450 src="assets/6.png" alt="Project logo">
+  <img width=250px height=450 src="assets/7.png" alt="Project logo">
+  <img width=250px height=450 src="assets/8.png" alt="Project logo">
+  <img width=250px height=450 src="assets/9.png" alt="Project logo">
+  <img width=250px height=450 src="assets/10.png" alt="Project logo">
+  <img width=250px height=450 src="assets/11.png" alt="Project logo">
+   <img width=250px height=450 src="assets/11.png" alt="Project logo">
+</p>
 
-![](assets/1.png)
-![](assets/2.png)
-![](assets/3.png)
-![](assets/4.png)
-![](assets/5.png)
-![](assets/6.png)
-![](assets/7.png)
-![](assets/8.png)
-![](assets/9.png)
-![](assets/10.png)
-![](assets/11.png)
-![](assets/12.png)
 ## 🎈 Usage <a name="usage"></a>
 1. Install npm on your machine
 2. Clone the repository using git clone [Fast-delivery](https://github.com/codewithdarkwa/fast-delivery.git)
