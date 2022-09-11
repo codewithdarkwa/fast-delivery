@@ -1,6 +1,9 @@
 
----
+<p align="center">
+   <img width=200px height=200px src="assets/logo.png" alt="Project logo">
+ </p>
 
+<h2 align="center">Fast delivery</h2>
 
 ## 📝 Table of Contents
 
@@ -58,7 +61,7 @@ npm start
   <img width=250px height=450 src="assets/9.png" alt="Project logo">
   <img width=250px height=450 src="assets/10.png" alt="Project logo">
   <img width=250px height=450 src="assets/11.png" alt="Project logo">
-   <img width=250px height=450 src="assets/11.png" alt="Project logo">
+   <img width=250px height=450 src="assets/12.png" alt="Project logo">
 </p>
 
 ## 🎈 Usage <a name="usage"></a>
