@@ -77,7 +77,7 @@ npm start
 - [Firebase](https://firebase.google.com/) - Database
 - [React Native](https://reactnative.dev/) - Client Framework
 - [Yelp Api](https://www.yelp.com/) - Food api
-- [Google Places Api](https://www.yelp.com/) - Google places autocomplete api
+- [Google Places Api](https://developers.google.com/maps/documentation/places/web-service/overview) - Google places autocomplete api
 - [Redux](https://redux.js.org/) - Redux
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
