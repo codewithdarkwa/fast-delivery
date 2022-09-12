@@ -97,7 +97,6 @@ const ref = useRef(null)
     }
     return(
         <SafeAreaView style={{flex:1,backgroundColor:'#006400'}}>
-               {/* <StatusBar backgroundColor="#006400"/> */}
             <FlatList 
             data={slides} 
             ref={ref}
