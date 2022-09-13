@@ -7,15 +7,7 @@ import firebase from '../firebase'
 
 export default function OrderCompleted() {
   const [lastOrder, setLastOrder] = useState({
-    items: [
-      {
-        title: "Bologna",
-        description: "With butter lettuce, tomato and sauce bechamel",
-        price: "$13.50",
-        image:
-          "https://www.modernhoney.com/wp-content/uploads/2019/08/Classic-Lasagna-14-scaled.jpg",
-      },
-    ],
+    items: [],
   });
 
   const { items, restaurantName } = useSelector(
