@@ -3,7 +3,6 @@ import {SafeAreaView, StyleSheet,Dimensions,FlatList,View,Image,Text,TouchableOp
 
 const {width,height} = Dimensions.get('window')
 
-
 const slides = [
     {
         id:1,
