@@ -16,8 +16,8 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Our project focuses on a food delivery app that allows a user to enter his location for food options local to his destination. It provides these options along with their respective prices from available prices from available restaurants and also performs all calculations involving the purcharse.
-The user is also allowed to choose between pickup and delivery, which ever is convenient
+Our project focuses on a food delivery app that allows a user to enter his location for food options local to his destination. It provides these options along with their respective prices from available restaurants and also performs all calculations involving the purchase.
+The user is also allowed to choose between pickup and delivery, whichever is convenient
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -69,7 +69,7 @@ npm start
 2. Clone the repository using git clone [Fast-delivery](https://github.com/codewithdarkwa/fast-delivery.git)
 3. Open it in vscode and run npm install to install all the dependencies
 4. Run npm start 
-5. Choose a to preview it on the android  emulator
+5. Choose to preview it on the android  emulator
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
